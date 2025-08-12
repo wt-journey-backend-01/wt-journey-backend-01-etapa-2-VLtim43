@@ -6,10 +6,10 @@ import {
   update,
   patch,
   remove,
-} from "../repositories/agentesRepository.js";
+} from "../utils/utils.js";
 
 // GET /agentes
-export function getAllAgentes(req, res) {
+export function getAllAgentes(_, res) {
   res.json(findAll());
 }
 
